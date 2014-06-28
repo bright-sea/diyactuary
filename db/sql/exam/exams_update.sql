@@ -1,0 +1,651 @@
+update bs_exams
+set description=
+"<p> Please go to <a href='http://www.beanactuary.org/exams/preliminary/?fa=probability-exam' target='_blank' > Be An Actuary </a> to get official information about this exam.</p>"
+where id=1;
+
+
+update bs_exams
+set description=
+"<p> Please go to <a href='http://www.beanactuary.org/exams/preliminary/?fa==financial-math-exam' target='_blank' > Be An Actuary </a> to get official information about this exam.</p>"
+where id=2;
+
+update bs_exams
+set description=
+"<p> Please go to <a href='http://www.beanactuary.org/exams/preliminary/?fa=financial-economics-exam' target='_blank' > Be An Actuary </a> to get official information about this exam.</p>"
+where id=3;
+
+update bs_exams
+set description=
+"<p> Please go to <a href='http://www.beanactuary.org/exams/preliminary/?fa=life-contingencies-exam' target='_blank' > Be An Actuary </a> to get official information about this exam.</p>"
+where id=4;
+
+update bs_exams
+set description=
+"<p> Please go to <a href='http://www.beanactuary.org/exams/preliminary/?fa=construction-and-evaluation-of-actuarial-models-exams' target='_blank' > Be An Actuary </a> to get official information about this exam.</p>"
+where id=5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--update exams
+--set description=
+--"<p>The Probability Exam is called Exam P by the SOA and Exam 1 by the CAS. This three-hour exam consists of 30 multiple-choice questions. The examination is jointly sponsored and administered by the SOA, CAS, and the Canadian Institute of Actuaries (CIA). The examination is also jointly sponsored by the American Academy of Actuaries (AAA) and the Conference of Consulting Actuaries (CCA).</p>
+--<p>The Probability Exam is administered as a computer-based test. For additional details, Please refer to <a href='http://www.beanactuary.org/exams/rules/'>Exam Rules</a>.</p>
+--<p>The purpose of the syllabus for this examination is to develop knowledge of the fundamental probability tools for quantitatively assessing risk. The application of these tools to problems encountered in actuarial science is emphasized. A thorough command of the supporting calculus is assumed. Additionally, a very basic knowledge of insurance and risk management is assumed.</p>
+--<p>A table of values for the normal distribution is available below for candidates to download and will be included with the examination. Since the table will be included with the examination, candidates will not be allowed to bring copies of the table into the examination room.</p>
+--<p>Check the <a href='http://www.beanactuary.org/exams/preliminary/?fa=exam-updates'>Updates</a> section on this exam's home page for any changes to the exam or syllabus.</p>
+--<p>The ranges of weights shown are intended to apply to the large majority of exams administered. On occasion, the weights of topics on an individual exam may fall outside the published range. Candidates should also recognize that some questions may cover multiple learning outcomes.</p>
+--<p>Each multiple-choice problem includes five answer choices identified by the letters A, B, C, D, and E, only one of which is correct. Candidates must indicate responses to each question on the computer.</p>
+--<p>As part of the computer-based testing process, a few pilot questions will be randomly placed in the exam (paper and pencil and computer-based forms). These pilot questions are included to judge their effectiveness for future exams, but they will not be used in the scoring of this exam. All other questions will be considered in the scoring. All unanswered questions are scored incorrect. Therefore, candidates should answer every question on the exam.</p>
+--<p>Since the CBT exam will be offered over a period of a few days, each candidate will receive a test form composed of questions selected from a pool of questions. Statistical scaling methods are used to ensure within reasonable and practical limits that, during the same testing period of a few days, all forms of the test are comparable in content and passing criteria. The methodology that has been adopted is used by many credentialing programs that give multiple forms of an exam.</p>
+--<h1>LEARNING OUTCOMES</h1>
+--<p>Candidates should be able to use and apply the following concepts in a risk management context:
+--<ol><li> General Probability (15-30%)
+--<ul><li> Set functions including set notation and basic elements of probability</li>
+--<li> Mutually exclusive events</li>
+--<li> Addition and multiplication rules</li>
+--<li> Independence of events</li>
+--<li> Combinatorial probability</li>
+--<li> Conditional probability</li>
+--<li> Bayes Theorem / Law of total probability</li></ul></li>
+--
+--<li> Univariate probability distributions (including binomial, negative binomial, geometric, hypergeometric, Poisson, uniform, exponential, gamma, and normal) (30-50%)
+--<ul><li> Probability functions and probability density functions</li>
+--<li> Cumulative distribution functions</li>
+--<li> Mode, median, percentiles, and moments</li>
+--<li> Variance and measures of dispersion</li>
+--<li> Moment generating functions</li>
+--<li> Transformations</li></ul></li>
+--
+--<li> Multivariate probability distributions (including the bivariate normal) (30-45%)
+--<ul><li> Joint probability functions and joint probability density functions</li>
+--<li>Joint cumulative distribution functions</li>
+--<li> Central Limit Theorem</li>
+--<li> Conditional and marginal probability distributions</li>
+--<li> Moments for joint, conditional, and marginal probability distributions</li>
+--<li> Joint moment generating functions</li>
+--<li> Variance and measures of dispersion for conditional and marginal probability distributions</li>
+--<li> Covariance and correlation coefficients</li>
+--<li> Transformations and order statistics</li>
+--<li> Probabilities and moments for linear combinations of independent random variables</li></ul></li></ol></p>
+--<h1>REFERENCES</h1>
+--<h2>Suggested Texts</h2>
+--<p>There is no single required text for this exam. The texts listed below may be considered as representative of the many texts available to cover material on which the candidate may be examined. Texts are added and deleted as part of a regular process to keep the list up-to-date. The addition or deletion of a textbook does not change the bank of questions available for examinations. There is no advantage to selecting a text recently added or not using a text recently removed.</p>
+--<p>Not all the topics may be covered adequately by just one text. Candidates may wish to use more than one of the following or other texts of their choosing in their preparation. Earlier or later editions may also be adequate for review.
+--<ul><li> A First Course in Probability (Eighth Edition), 2009, by Ross, S.M., Chapters 1-8.</li>
+--<li> Mathematical Statistics with Applications (Seventh Edition), 2008, by Wackerly, D., Mendenhall III, W., Scheaffer, R., Chapters 1-7.</li>
+--<li> Probability for Risk Management, (Second Edition), 2006, by Hassett, M. and Stewart, D., Chapters 1-11.</li>
+--<li> Probability and Statistical Inference (Eighth Edition), 2009, by Hogg, R.V. and Tanis, E.A., Chapters 1-5.</li>
+--<li> Probability and Statistics with Applications: A Problem Solving Text, 2010, by Asimow, L. and Maxwell, M.</li>
+--<li> Probability: The Science of Uncertainty with Applications to Investments, Insurance and Engineering 2009, by Bean, M.A., Chapters 1-9.</li></ul></p>
+--<h2>Other Resources</h2>
+--<p>The candidate is expected to be familiar with the concepts introduced in 'Risk and Insurance'.</p>
+--<p><a href='http://www.soa.org/files/pdf/P-05-05tables.pdf'>Tables for Exam P/1</a><br>
+--Exam P/1 Sample <a href='http://www.soa.org/files/pdf/P-05-05tables.pdf'>Questions</a> and <a href='http://www.beanactuary.org/exams/preliminary/exams/syllabi/ExamPSamplesolutions.pdf'>Solutions</a> (1-153)<br>
+--<a href='http://www.soa.org/files/pdf/P-21-05.pdf'>Risk and Insurance</a></p>"
+--where id=1;
+--
+--
+--
+--update exams
+--set description=
+--"<p>The Financial Mathematics exam is called Exam FM by the SOA and Exam 2 by the CAS. This three-hour exam consists of 35 multiple-choice questions. The examination is administered by Preliminary Actuarial Examinations/SOA. The examination is jointly sponsored and administered by the CAS, SOA, and the Canadian Institute of Actuaries (CIA). The examination is also jointly sponsored by the American Academy of Actuaries (AAA) and the Conference of Consulting Actuaries (CCA).</p>
+--<p>The Financial Mathematics Exam is administered as a computer-based test. For additional details, please refer to <a href='http://www.beanactuary.org/exams/rules/'>Exam Rules</a>.</p>
+--<p>The goal of the syllabus for this examination is to provide an understanding of the fundamental concepts of financial mathematics, and how those concepts are applied in calculating present and accumulated values for various streams of cash flows as a basis for future use in: reserving, valuation, pricing, asset/liability management, investment income, capital budgeting, and valuing contingent cash flows. The candidate will also be given an introduction to financial instruments, including derivatives, and the concept of no-arbitrage as it relates to financial mathematics.</p>
+--<p>The Financial Mathematics Exam assumes a basic knowledge of calculus and an introductory knowledge of probability.</p>
+--<p>The following learning objectives are presented with the understanding that candidates are allowed to use specified calculators on the exam. The education and examination of candidates reflects that fact. In particular, such calculators eliminate the need for candidates to learn and be examined on certain mathematical methods of approximation.</p>
+--<p>Please check the <a href='http://www.beanactuary.org/exams/preliminary/?fa=exam-updates'>Updates</a> section on this exam's home page for any changes to the exam or syllabus.</p>
+--<p>The ranges of weights shown are intended to apply to the large majority of exams administered. On occasion, the weights of topics on an individual exam may fall outside the published range. Candidates should also recognize that some questions may cover multiple learning objectives.</p>
+--<p>Each multiple-choice problem includes five answer choices identified by the letters A, B, C, D, and E, only one of which is correct. Candidates must indicate responses to each question on the computer. Candidates will be given three hours to complete the exam.</p>
+--<p>As part of the computer-based testing process, a few pilot questions will be randomly placed in the exam (paper and pencil and computer-based forms). These pilot questions are included to judge their effectiveness for future exams, but they will NOT be used in the scoring of this exam. All other questions will be considered in the scoring. All unanswered questions are scored incorrect. Therefore, candidates should answer every question on the exam.</p>
+--<p>Since the CBT exam will be offered over a period of a few days, each candidate will receive a test form composed of questions selected from a pool of questions. Statistical scaling methods are used to ensure within reasonable and practical limits that, during the same testing period of a few days, all forms of the test are comparable in content and passing criteria. The methodology that has been adopted is used by many credentialing programs that give multiple forms of an exam.</p>
+--<h1>LEARNING OBJECTIVES</h1>
+--<ol type='I'><li> Interest Theory (65-80%)
+--	<ol type='A'><li> Time Value of Money (5-15%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Interest rate (rate of interest)</li>
+--				<li> Simple interest</li>
+--				<li> Compound interest</li>
+--				<li> Accumulation function</li>
+--				<li> Future value</li>
+--				<li> Present value/net present value</li>
+--				<li> Discount factor</li>
+--				<li> Discount rate (rate of discount)</li>
+--				<li> Convertible m-thly</li>
+--				<li> Nominal rate</li>
+--				<li> Effective rate</li>
+--				<li> Inflation and real rate of interest</li>
+--				<li> Force of interest</li>
+--				<li> Equation of value</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Given any two of interest rate, present value, or future value, calculate the third based on simple or compound interest.</li>
+--				<li> Given any one of the effective interest rate, the nominal interest rate convertible m-thly, the effective discount rate, the nominal discount rate convertible m-thly, or the force of interest, calculate all of the other items.</li>
+--				<li> Write the equation of value given a set of cash flows and an interest rate.</li>
+--			</ol></li>
+--		</ol></li>
+--	<li> Annuities with payments that are not contingent (5-20%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Annuity-immediate</li>
+--				<li> Annuity-due</li>
+--				<li> Perpetuity</li>
+--				<li> Payable m-thly, or Payable continuously</li>
+--					<li> Level payment annuity</li>
+--				<li> Arithmetic increasing/decreasing payment annuity</li>
+--				<li> Geometric increasing/decreasing payment annuity</li>
+--				<li> Term of annuity</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Given an annuity with level payments, immediate (or due), payable m-thly, (or payable continuously), and any three of present value, future value, interest rate, payment, and term calculate the remaining two items.</li>
+--				<li> Given an annuity with non-level payments, immediate (or due), payable m-thly, (or payable continuously), the pattern of payment amounts, and any three of present value, future value, interest rate, payment amounts, and term of annuity calculate the remaining two items.</li>
+--			</ol></li>
+--		</ol></li>
+--	<li> Loans (5-20%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Principal</li>
+--				<li> Interest</li>
+--				<li> Term of loan</li>
+--				<li> Outstanding balance</li>	
+--				<li> Final payment (drop payment, balloon payment)</li>
+--				<li> Amortization</li>
+--				<li> Sinking fund</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Given any four of term of loan, interest rate, payment amount, payment period, principal, calculate the remaining items.</li>
+--				<li> Calculate the outstanding balance at any point in time.</li>
+--				<li> Calculate the amount of interest and principal repayment in a given payment.</li>
+--				<li> Given the quantities, except one, in a sinking fund arrangement calculate the missing quantity.</li>
+--			</ol></li>
+--		</ol></li>
+--	<li> Bonds (5-20%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Price</li>
+--				<li> Redemption value</li>
+--				<li> Par Value/Face value</li>
+--				<li> Coupon, Coupon rate</li>
+--				<li> Term of bond</li>
+--				<li> Yield rate</li>
+--				<li> Callable/non-callable</li>
+--				<li><li> Book value</li>
+--				<li> Accumulation of discount/Amortization of premium</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Given any four of price, redemption value, yield rate, coupon rate, and term of bond, calculate the remaining item.</li>
+--			</ol></li>
+--		</ol></li>
+--	<li> General Cash Flows and Portfolios (5-20%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Yield rate/rate of return</li>
+--				<li> Dollar-weighted rate of return/Time-weighted rate of return</li>
+--				<li> Current value</li>
+--				<li> Duration (Macaulay, modified and effective)</li>
+--				<li> Convexity</li>
+--				<li> Portfolio and investment year allocation methods</li>
+--				<li> Spot rate</li>
+--				<li> Forward rate</li>
+--				<li> Yield curve</li>
+--				<li> Stock price, stock dividend</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Calculate the current value of a set of cash flows.</li>
+--				<li> Calculate the portfolio yield rate.</li>
+--				<li> Calculate the dollar-weighted and time-weighted rate of return.</li>
+--				<li> Calculate the duration and convexity of a set of cash flows.</li>
+--				<li> Calculate either Macaulay or modified duration given the other.</li>
+--				<li> Use duration and convexity to approximate the change in present value due to a change in interest rate.</li>
+--				<li> Calculate the price of a stock using the dividend discount model.</li>
+--			</ol></li>
+--		</ol></li>
+--	<li> Immunization (5-15%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Cash-flow matching,</li>
+--				<li> Immunization (including full immunization),</li>
+--				<li> Redington immunization.</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Construct an investment portfolio to fully immunize a set of liability cash flows.</li>
+--				<li> Construct an investment portfolio to match present value and duration of a set of liability cash flows.</li>
+--				<li> Construct an investment portfolio to exactly match a set of liability cash flows.</li>
+--			</ol></li>
+--		</ol></li>
+--	</ol></li>
+--<li> Financial Economics (20-35%)
+--	<ol type='A'><li> General Derivatives (0-5%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Derivative, Underlying asset, Over-the-counter market</li>
+--				<li> Ask price, Bid price, Bid-ask spread</li>
+--				<li> Short selling, Short position, Long position</li>
+--				<li> Stock index</li>
+--				<li> Spot price</li>
+--				<li> Net profit/payoff</li>
+--				<li> Credit risk</li>
+--				<li> Marking-to-market</li>
+--				<li> Margin, Maintenance margin, Margin call</li>
+--			</ol></li>
+--			<li> The candidate will be able to evaluate an investor's margin position based on changes in asset values.</li>
+--		</ol></li>
+--	<li> Options (5-10%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Call option, Put option</li>
+--				<li> Expiration, Expiration date</li>
+--				<li> Strike price/Exercise price</li>
+--				<li> European option, American option, Bermudan option</li>
+--				<li> In-the-money, At-the-money, Out-of-the-money</li>
+--				<li> Covered call, Naked writing</li>
+--				<li> Dividends</li>
+--				<li> Put-call parity</li>
+--			</ol></li>
+--			<li> The candidate will be able to evaluate the payoff and profit of basic derivative contracts.</li>
+--		</ol></li>
+--	<li> Hedging and Investment Strategies (5-15%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Hedging, Arbitrage</li>
+--				<li> Diversifiable risk, Nondiversifiable risk</li>
+--				<li> Synthetic forwards</li>
+--				<li> Spreads (including bull, bear, box, and ratio spreads)</li>
+--				<li> Collars (including zero-cost collars), Paylater strategy</li>
+--				<li> Straddles (including strangles, written straddles and butterfly spreads)</li>
+--				<li> Convertible bond, Mandatorily convertible bond</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Explain how derivative securities can be used as tools to manage financial risk.</li>
+--				<li> Explain the reasons to hedge and not to hedge.</li>
+--				<li> Evaluate the payoff and profit of hedging strategies.</li>
+--			</ol></li>
+--		</ol></li>
+--	<li> Forwards and Futures (0-10%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Forward contract, Prepaid forward contract</li>
+--				<li> Outright purchase, Fully leveraged purchase</li>
+--				<li> Implied repo rate</li>
+--				<li> Cost of carry</li>
+--				<li> Lease rate</li>
+--				<li> Futures contract</li>
+--			</ol></li>
+--		<li> The candidate will be able to:
+--			<ol type='a'><li> Determine forward price from prepaid forward price.</li>
+--				<li> Explain the relationship between forward price and futures price.</li>
+--				<li> Explain the relationship between forward price and future stock price.</li>
+--				<li> Use the concept of no-arbitrage to determine the theoretical value of futures and forwards.</li>
+--				<li> Given any four of call premium, put premium, forward price, strike price and interest rate, calculate the remaining item using the put-call parity formula.</li>
+--			</ol></li>
+--		</ol></li>
+--	<li> Swaps (0-5%)
+--		<ol type='1'><li> The candidate will be able to define and recognize the definitions of the following terms:
+--			<ol type='a'><li> Swap, Prepaid swap</li>
+--				<li> Swap term, Swap spread, Notional Amount</li>
+--				<li> Simple commodity swap, Interest rate swap</li>
+--				<li> Deferred swap</li>
+--			</ol></li>
+--		<li> The candidate will be able to use the concept of no-arbitrage to determine the theoretical values of swaps.</li>
+--		</ol></li>
+--	</ol></li>
+--</ol></li>
+--<h1>Text References</h1>
+--<p>Knowledge and understanding of the financial mathematics concepts are significantly enhanced through working out problems based on those concepts. Thus, in preparing for the Financial Mathematics exam, whichever of the source textbooks candidates choose to use, candidates are encouraged to work out the textbook exercises related to the listed readings.</p>
+--<h2>Suggested Textbooks for Learning Objectives in Section I, Interest Theory</h2>
+--<p>There is not a single textbook required for the learning objectives in Section I. The texts listed below are representative of the textbooks available to cover the material on which the candidate may be tested. Not all topics may be covered at the same level in each text. The candidate may wish to use one or more texts in his/her preparation for the examination.</p>
+--<p>Broverman, S.A., Mathematics of Investment and Credit (Fourth Edition), 2008, ACTEX Publications:[Candidates may also use Fifth Edition, same chapters]<br>
+--Chapter 1 (1.1-1.7)<br>
+--Chapter 2 (2.1 -2.4 excluding 2.4.2 and 2.4.3)<br>
+--Chapter 3 (3.1-3.3, excluding 3.2.1 and 3.2.2)<br>
+--Chapter 4 (4.1-4.3.1)<br>
+--Chapter 5 (5.1-5.3 excluding 5.1.4 and 5.3.2)<br>
+--Chapter 6 (6.1-6.3 excluding 6.2)<br>
+--Chapter 7 (7.1-7.2)<br>
+--Chapter 8 (8.1, 8.3.1 and 8.4.1-8.4.2)<br></p>
+--<p>Daniel, J.W., and Vaaler, L.J.F., Mathematical Interest Theory (Second Edition), 2009, The Mathematical Association of America: [Candidates may also use the First Edition of Mathematical Interest Theory (Publisher: Prentice Hall). The same chapter references apply.]<br>
+--Chapter 1 (1.3-1.12, 1.14)<br>
+--Chapter 2 (2.2-2.7)<br>
+--Chapter 3 (3.2-3.9, 3.11, 3.13)<br>
+--Chapter 4 (4.2-4.6)<br>
+--Chapter 5 (5.2-5.4)<br>
+--Chapter 6 (6.2-6.6, 6.9)<br>
+--Chapter 7 (7.1)<br>
+--Chapter 8 (8.3)<br>
+--Chapter 9 (9.1-9.5)<br></p>
+--<p>Kellison, S.G., The Theory of Interest (Third Edition), 2008, Irwin/McGraw-Hill:<br>
+--Chapter 1 (1.2-1.10)<br>
+--Chapter 2 (2.3-2.6)<br>
+--Chapter 3 (3.2-3.8)<br>
+--Chapter 4 (4.2-4.9)<br>
+--Chapter 5 (5.2-5.6)<br>
+--Chapter 6 (6.2-6.7, 6.10)<br>
+--Chapter 7 (7.2-7.7)<br>
+--Chapter 9 (9.4)<br>
+--Chapter 10 (10.2-10.5)<br>
+--Chapter 11 (11.2-11.8)<br></p>
+--<p>Ruckman, C., and Francis, J., Financial Mathematics: A Practical Guide for Actuaries and other Business Professionals (Second Edition), 2005, BPP Professional Education:<br>
+--Chapter 1<br>
+--Chapter 2<br>
+--Chapter 3 (3.1-3.9)<br>
+--Chapter 4 (4.1-4.7)<br>
+--Chapter 5<br>
+--Chapter 6 (6.1-6.3 excluding 6.1.6-6.1.7)<br>
+--Chapter 7 (7.1-7.9)<br>
+--Chapter 8 (8.1-8.3)<br></p>
+--<h2>Textbook for Learning Objectives in Section II, Financial Economics</h2>
+--<p>McDonald, R.L., Derivatives Markets (Second Edition), 2006, Addison Wesley:<br>
+--Chapter 1 (1.1-1.4)<br>
+--Chapter 2 (2.1-2.6 and Appendix 2.A)<br>
+--Chapter 3 (3.1-3.5)<br>
+--Chapter 4 (4.1-4.4)<br>
+--Chapter 5 (5.1-5.4 and Appendix 5.B)<br>
+--Chapter 8 (8.1-8.2).<br></p>
+--<h1>OTHER RESOURCES:</h1>
+--<p><a href='http://www.kellogg.northwestern.edu/faculty/mcdonald/htm/typos2e.html'>Derivatives Markets, Errata</a>, 2006 Second Edition, by R. McDonald</p>
+--<p><a href='http://www.beanactuary.org/exams/preliminary/exams/syllabi/Notation_term2FM2011.pdf'>Notation and terminology used for Exam FM/Exam 2</a></p>
+--<p><a href='http://www.soa.org/education/exam-req/syllabus-study-materials/edu-multiple-choice-exam.aspx'>All released exam papers</a>, since 2000, can be found here.</p>
+--<p>Exam FM/2 Sample <a href='http://www.soa.org/files/pdf/FM-09-05ques.pdf'>Questions</a> and <a href='http://www.soa.org/files/pdf/FM-09-05sol2nd.pdf'>Solutions</a></p>
+--<p>Samples <a href='http://www.soa.org/files/pdf/edu-2009-fall-exam-fm-ques.pdf'>Questions</a> and <a href='http://www.soa.org/files/pdf/edu-2009-fall-exam-fm-sol.pdf'>Solutions</a> for Derivatives Markets</p>
+--<p><a href='http://www.soa.org/files/pdf/FM-22-05.pdf'>Review of Calculator Functions for the Texas Instruments BA-35</a></p>
+--<p><a href='http://www.soa.org/files/pdf/FM-23-05.pdf'>Review of Calculator Functions for the Texas Instruments BA II Plus</a></p>"
+--where id=2;
+--
+--
+--update exams
+--set description=
+--"<p>Models for Financial Economics is a three hour multiple-choice examination and is referred to as Exam MFE by the SOA and Exam 3F by the CAS. The examination is jointly sponsored and administered by the SOA, CAS and the Canadian Institute of Actuaries (CIA). The examination is also jointly sponsored by the American Academy of Actuaries (AAA) and the Conference of Consulting Actuaries (CCA).</p>
+--<p>The purpose of the syllabus is to develop the candidate's knowledge of the theoretical basis of certain actuarial models and the application of those models to insurance and other financial risks. A thorough knowledge of calculus, probability, interest theory and the earlier chapters of the McDonald textbook (which are in the syllabus of Exam FM/2) is assumed.</p>
+--<p>Formulas are provided for the density and distribution functions for the standard normal and lognormal random variables. For paper and pencil examinations, tables of the standard normal distribution function are provided. Since the tables will be provided to the candidate at the examination, candidates will not be allowed to bring copies of the tables into the examination room. For CBT candidates, a normal distribution calculator is provided. See the link below for more information.</p>
+--<p>Note: It is anticipated that candidates will have done the relevant exercises in the textbooks.</p>
+--<p>Check the <a href='http://www.beanactuary.org/exams/preliminary/?fa=exam-updates'>Updates</a> section of the web site for any changes to the exam or syllabus.</p>
+--<p>The ranges of weights shown are intended to apply to the large majority of exams administered. On occasion, the weights of topics on an individual exam may fall outside the published range. Candidates should also recognize that some questions may cover multiple learning outcomes.</p>
+--<p>Each multiple-choice problem includes five answer choices identified by the letters A, B, C, D, and E, only one of which is correct. Candidates must indicate responses to each question on the computer.</p>
+--<p>As part of the computer-based testing process, a few pilot questions will be randomly placed in the exam (paper and pencil and computer-based forms). These pilot questions are included to judge their effectiveness for future exams, but they will NOT be used in the scoring of this exam. All other questions will be considered in the scoring. All unanswered questions are scored incorrect. Therefore, candidates should answer every question on the exam.</p>
+--<p>Since the CBT exam will be offered over a period of a few days, each candidate will receive a test form composed of questions selected from a pool of questions. Statistical scaling methods are used to ensure within reasonable and practical limits that, during the same testing period of a few days, all forms of the test are comparable in content and passing criteria. The methodology that has been adopted is used by many credentialing programs that give multiple forms of an exam.</p>
+--<h1>LEARNING OUTCOMES - MODELS FOR FINANCIAL ECONOMICS</h1>
+--<ol type='A'><li> Interest rate models (10-15%)
+--	<ol type='1'><li> Evaluate features of the Vasicek and Cox-Ingersoll-Ross bond price models.</li>
+--		<li> Explain why the time-zero yield curve in the Vasicek and Cox-Ingersoll-Ross bond price models cannot be exogenously prescribed.</li>
+--		<li> Construct a Black-Derman-Toy binomial model matching a given time-zero yield curve and a set of volatilities.</li>
+--	</ol></li>
+--<li> Rational valuation of derivative securities (65-75%)
+--	<ol type='1'><li> Use put-call parity to determine the relationship between prices of European put and call options and to identify arbitrage opportunities.</li>
+--		<li> Calculate the value of European and American options using the binomial model.</li>
+--		<li> Calculate the value of European and American options using the Black-Scholes option-pricing model.</li>
+--		<li> Identify the situations where the values of European and American options are the same.</li>
+--		<li> Interpret the option Greeks.</li>
+--		<li> Explain the cash flow characteristics of the following exotic options: Asian, barrier, compound, gap, and exchange.</li>
+--		<li> Explain the properties of a lognormal distribution and explain the Black-Scholes formula as a limited expected value for a lognormal distribution.</li>
+--		<li> Explain what it means to say that stock prices follow a diffusion process.</li>
+--		<li> Apply Ito's lemma in the one-dimensional case.</li>
+--	</ol></li>
+--<li> Simulation (10-15%)
+--	<ol type='1'><li> Simulate lognormal stock prices.</li>
+--		<li> Use variance reduction techniques to accelerate convergence.</li>
+--	</ol></li>
+--<li> Risk management techniques (5-10%)
+--	<ol type='1'><li> Explain and demonstrate how to control risk using the method of delta-hedging.</li>
+--	</ol></li>
+--</ol></li>
+--<p>Note: Concepts, principles and techniques needed for Exam MFE/3F are covered in the reference listed below. Candidates and professional educators may use other references, but candidates should be very familiar with the notation and terminology used in the listed references.</p>
+--<h2>Texts - Models for Financial Economics*</h2>
+--<p>Derivatives Markets (Second Edition), 2006, by McDonald, R.L.,
+--<ul><li>Chapter 9,</li>
+--<li>Chapter 10, (excluding 'Options on Commodities' on page 334),</li>
+--<li>Chapter 11, Sections 11.1-11.4, Appendices 11.A and 11.B,</li>
+--<li>Chapter 12, Sections 12.1-12.5, Appendix 12.A,</li>
+--<li>Chapter 13, including Appendix 13.B,</li>
+--<li>Chapter 14,</li>
+--<li>Chapter 18,</li>
+--<li>Chapter 19, Sections 19.1-19.5</li>
+--<li>Chapter 20, Sections 20.1-20.6 (up to but excluding 'Multivariate Ito's Lemma' on pages 665-666) and 20.7 (up to but excluding 'Valuing a Claim on SaQb on pages 670-672 and excluding 'Finding the lease rate' on top one-half of page 669),</li>
+--<li>Chapter 21, Sections 21.1-21.2 (excluding 'What If the Underlying Asset Is Not an Investment Asset' on pages 688-690) and 21.3 ( excluding 'The Backward Equation' on pages 691-692, and excluding the paragraph on page 692 that begins 'If a probability...' and through the end of the section),</li>
+--<li>Chapter 22, Section 22.1 (but with only those definitions in Tables 22.1 and 22.2 that are relevant to Section 22.1),</li>
+--<li>Chapter 23, Sections 23.1-23.2 (pp.744 thru the middle of p.746 only),</li>
+--<li>Chapter 24, Sections 24.1-24.5 (up to but excluding 'Forward rate agreements' on pages 806-808),</li>
+--<li>Appendix B.1, Appendix C and including relevant Errata (see below).</li></ul></p>
+--<p>Unless otherwise stated chapter appendices are not included in the required readings from this text.</p>
+--<p><b>*Any textbook errata are included below.</b></p>
+--<h2>Other Resources - Models for Financial Economics</h2>
+--<p><a href='http://www.soa.org/files/pdf/edu-2009-fall-mfe-table.pdf'>Exam MFE/Exam 3F Formulas and Tables for paper/pencil<a></p>
+--<p>Formulas and Tables for CBT:
+--<ul><li> A <a href='http://www.prometric.com/SOA/MFE3F_calculator.htm'>normal distribution calculator<a> will be available during the test by clicking buttons on the item screen.</li>
+--<li> <a href='http://www.prometric.com/SOA/MFE3F_calculator.htm'>Formula document<a></li></ul></p>
+--<p><a href='http://www.soa.org/files/pdf/edu-cat-remarks-mfe.pdf'>Some Remarks on Derivatives Markets<a></p>
+--<p>Derivatives Markets, Errata 2006 Second Edition, by R. McDonald,,br>
+--<a href='http://www.kellogg.northwestern.edu/faculty/mcdonald/htm/typos2e.html'>http://www.kellogg.northwestern.edu/faculty/mcdonald/htm/typos2e.html<a></p>
+--<p><a href='http://www.soa.org/education/exam-req/syllabus-study-materials/edu-multiple-choice-exam.aspx'>All released exam papers<a>, since 2000 can be found here.</p>
+--<p><a href='http://www.beanactuary.org/exams/preliminary/exams/syllabi/MFE_SampleQS1-76.pdf'>Exam MFE/3F Sample Questions and Solutions (1-76)<a></p>"
+--where id=3;
+--
+--
+--update exams
+--set description=
+--"<p>Exam MLC is a three-hour multiple choice examination. The examination is jointly sponsored and administered by the SOA and the Canadian Institute of Actuaries (CIA). The examination is also jointly sponsored by the American Academy of Actuaries (AAA) and the Conference of Consulting Actuaries (CCA).</p>
+--<p>The purpose of the syllabus is to develop the candidate's knowledge of the theoretical basis of life contingent actuarial models and the application of those models to insurance and other financial risks. A thorough knowledge of calculus, probability, and interest theory is assumed. Knowledge of risk management at the level of Exam P is also assumed.</p>
+--<p>Tables are provided below for the candidate and will be provided to the candidate at the examination. These include a table of values for the standard normal distribution and illustrative life tables. Since the tables for Exam MLC will be provided to the candidate at the examination, candidates will not be allowed to bring copies of the tables into the examination room.</p>
+--<p>Knowledge and understanding of life contingency concepts are significantly enhanced through working out problems based on those concepts. Thus, in preparing for Exam MLC candidates are encouraged to work out the exercises related to the listed sections and chapters for their chosen reading source. In setting questions for the examination it is anticipated that candidates will have done the exercises in their chosen reading related to the listed sections and chapters and the Exam MLC sample questions (link provided at the end of this document).</p>
+--<p>Check the <a href='http://www.soa.org/education/exam-req/syllabus-study-materials/edu-updates-exam-m.aspx'>Updates</a> section of the SOA Web site for any changes to the exam or syllabus.</p>
+--<p>The ranges of weights shown are intended to apply to the large majority of exams administered. On occasion, the weights of topics on an individual exam may fall outside the published range.</p>
+--<p>Candidates should also recognize that questions may cover multiple learning outcomes.</p>
+--<h1>LEARNING OUTCOMES - LIFE CONTINGENCIES</h1>
+--<p><ol type='1'><li> Describe the common decrements and their application to insurances and annuities. (0-5%)</li>
+--<li> Models used to model decrements used in insurances and annuities. (10-20%)
+--	<ol type='a'><li> Calculate single, joint, marginal and conditional probabilities, as applicable and moments for the time-to-decrement, age-at-decrement and cause-of-decrement random variables based on single decrement on single life models, multiple decrements on single life models and single decrement on multiple lives models.</li>
+--		<li> Calculate the probability of being in a particular state and transitioning between states based on continuous-time Markov chain models, discrete approximations of continuous-time Markov chain models and discrete-time Markov chain models.</li>
+--	</ol></li>
+--<li> Calculate present values and accumulated values using non-stochastic interest rate models. (0-5%)</li>
+--<li> Models used to model cash flows of traditional life insurances and annuities. (15-25%)
+--	<ol type='a'><li> Calculate single, joint, marginal and conditional probabilities, as applicable and moments of the present-value-of-benefits and present-value-of-premium random variables based on single decrement on single life models, multiple decrements on single life models and single decrement on multiple lives models.</li>
+--		<li> Calculate present values of cash flows.</li>
+--		<li> Calculate present values of cash flows by redefining the present-value-of-benefit and present-value-of-premium random variables to Markov chain models.</li>
+--	</ol></li>
+--<li> Describe how reserves are used as an accounting entry to allocate income over the life of a contract. (0-5%)</li>
+--<li> Benefit reserves for traditional life insurances and annuities. (15-25%)
+--	<ol type='a'><li> Calculate moments of the loss-at-issue random and future-loss random variables based on single decrement on single life models and multiple decrements on single life models.</li>
+--		<li> State the equivalence principle.</li>
+--		<li> Calculate benefit reserves and premium based on single decrement on single life models and multiple decrements on single life models.</li>
+--		<li> Calculate benefit reserves and premium using a Markov chain model with specified cash flows.</li>
+--	</ol></li>
+--<li> Models used to model cash flows for non-interest sensitive insurances other than traditional life insurances and annuities. (5-15%)
+--	<ol type='a'><li> Calculate benefit premium and benefit reserves by applying concepts presented for traditional life insurance and annuities for the loss-at-issue and future loss random variables based on single decrement on single life models, multiple decrements on single life models, and Markov chain models.</li>
+--	</ol></li>
+--<li> Models used to model contract cash flows for basic universal life insurances. (Combined weighting for objectives 8 - 10 is 0-10%)
+--	<ol type='a'><li> Calculate the contract account value and contract surrender value.</li>
+--		<li> Describe differences between primary and secondary contract guarantees.</li>
+--	</ol></li>
+--<li> Models used to model cash flows of basic universal life insurance.
+--	<ol type='a'><li> Calculate probabilities and moments of the present-value-of-benefits, present-value-of-premiums and present-value-of-charges random variables based on multiple decrements on single life models.</li>
+--		<li> Calculate present values of cash flows.</li>
+--		<li> Redefine the present-value-of-benefit and present-value-of-premium random variables to Markov chain models to calculate present values of cash flows.</li>
+--	</ol></li>
+--<li> Benefit reserves for basic universal life insurances.
+--	<ol type='a'><li> Calculate the benefit reserve.</li>
+--		<li> Describe the calculation of the reserve for a secondary guarantee.</li>
+--	</ol></li>
+--<li> Models that consider expense cash flows. (10-25%)
+--	<ol type='a'><li> Calculate an expense factor using the appropriate exposure.</li>
+--		<li> Calculate probabilities and moments of the present-value-of-expenses random variable based on single decrement on single life model and multiple decrements on a single life models.</li>
+--		<li> Calculate the expense reserve.</li>
+--		<li> Calculate a gross premium given expenses and benefits based on: the equivalence principle; and a return on gross profits basis.</li>
+--		<li> Calculate the gross premium reserve.</li>
+--		<li> Calculate the asset share.</li>
+--	</ol></li>
+--</ol></li></p>
+--<h2>Readings</h2>
+--<p>Either of the reading sources listed below may be used as a source in preparing for the examination.</p>
+--<p>Not all topics listed in the learning objectives are covered at the same level in each source. The sources differ in their exposition, examples, and exercises. The selection of examination questions is based on coverage of the learning objectives but the selection of the examination questions is not necessarily neutral with respect to the sources. That is, the sources may not be equivalent in their coverage of all the specific items included on an examination question.</p>
+--<p>Cunningham, R.J., Herzog, T.N., and London, R.L. (2011) Models for Quantifying Risks, Fourth Edition. Winsted, CT: ACTEX Publications, Inc. Chapters 3, 5-15 (excluding Sections 11.6 and 15.5), 16 (Section 16.1 only).</p>
+--<p>Dickson, C.M.D., Hardy, M.R., and Waters, H.R. (2009), Actuarial Mathematics for Life Contingent Risks, Cambridge: Cambridge University Press. Chapters 1-11 (excluding Sections 9.5-9.7 and 10.5). plus <a href='http://www.soa.org/files/pdf/edu-2012-spring-mlc-studynotes.pdf'>Supplementary Notes for Actuarial Mathematics for Life Contingent Risks Version 2.0.</a></p>
+--<h2>Other Resources</h2>
+--<p><a href=''>Errata for Actuarial Mathematics for Life Contingent Risks</a></p>
+--<p><a href='http://www.soa.org/files/pdf/edu-2008-spring-mlc-tables.pdf'>Exam MLC Tables</a></p>
+--<p><a href='http://www.soa.org/files/pdf/edu-2012-spring-mlc-terminology.pdf'>Notation and Terminology used on Exam MLC</a></p>
+--<p><a href='http://www.soa.org/education/exam-req/syllabus-study-materials/edu-multiple-choice-exam.aspx'>All released exam papers</a>, since 2000 can be found here.</p>
+--<p>Exam MLC Sample <a href='http://www.soa.org/files/pdf/edu-2012-spring-mlc-questions.pdf'>Questions</a> and <a href='http://www.soa.org/files/pdf/edu-2012-spring-mlc-solutions.pdf'>Solutions</a></p>"
+--where id=4;
+--
+--
+--update exams
+--set description=
+--"<p>The Construction and Evaluation of Actuarial Models exam is called Exam C by the SOA and Exam 4 by the CAS. This three-and-a-half hour exam consists of 35 multiple-choice questions. Also, a preview of the CBT layout of the <a href='http://www.beanactuary.org/exams/preliminary/?fa=C4tables'>Exam C/4 tables</a> in HTML is available online since the tables have been divided into five sections for viewing purposes.</p>
+--<p>The examination is jointly sponsored and administered by the SOA, CAS, and the Canadian Institute of Actuaries (CIA). The examination is also jointly sponsored by the American Academy of Actuaries (AAA) and the Conference of Consulting Actuaries (CCA).</p>
+--<p>The Construction and Evaluation of Actuarial Models Exam is administered as a computer-based test. For additional details, please refer to <a href='http://www.beanactuary.org/exams/rules/'>Exam Rules</a>. The syllabus for this examination provides an introduction to modeling and covers important actuarial methods that are useful in modeling. A thorough knowledge of calculus, probability, and mathematical statistics is assumed.</p>
+--<p>The candidate will be introduced to useful frequency and severity models beyond those covered in Exam M. The candidate will be required to understand the steps involved in the modeling process and how to carry out these steps in solving business problems. The candidate should be able to: 1) analyze data from an application in a business context; 2) determine a suitable model including parameter values; and 3) provide measures of confidence for decisions based upon the model. The candidate will be introduced to a variety of tools for the calibration and evaluation of the models.</p>
+--<p>A variety of tables is available below for the candidate and will be provided to the candidate at the examination. These include values for the standard normal distribution, chi-square distribution, and abridged inventories of discrete and continuous probability distributions. Candidates will not be allowed to bring copies of the tables into the examination room.</p>
+--<p>Check the <a href='http://www.beanactuary.org/exams/preliminary/?fa=exam-updates'>Updates</a> section on this exam's home page for any changes to the exam or syllabus.</p>
+--<p>The ranges of weights shown are intended to apply to the large majority of exams administered. On occasion, the weights of topics on an individual exam may fall outside the published range. Candidates should also recognize that some questions may cover multiple learning outcomes.</p>
+--<p>Each multiple-choice problem includes five answer choices identified by the letters A, B, C, D, and E, only one of which is correct. Candidates must indicate responses to each question on the computer.</p>
+--<p>As part of the computer-based testing process, a few pilot questions will be randomly placed in the exam (paper and pencil and computer-based forms). These pilot questions are included to judge their effectiveness for future exams, but they will NOT be used in the scoring of this exam. All other questions will be considered in the scoring. All unanswered questions are scored incorrect. Therefore, candidates should answer every question on the exam.</p>
+--<p>Since the CBT exam will be offered over a period of a few days, each candidate will receive a test form composed of questions selected from a pool of questions. Statistical scaling methods are used to ensure within reasonable and practical limits that, during the same testing period of a few days, all forms of the test are comparable in content and passing criteria. The methodology that has been adopted is used by many credentialing programs that give multiple forms of an exam.</p>
+--<h1>LEARNING OUTCOMES</h1>
+--<p>The candidate is expected to be familiar with survival, severity, frequency and aggregate models, and use statistical methods to estimate parameters of such models given sample data. The candidate is further expected to identify steps in the modeling process, understand the underlying assumptions implicit in each family of models, recognize which assumptions are applicable in a given business application, and appropriately adjust the models for impact of insurance coverage modifications.</p>
+--<p>Specifically, the candidate is expected to be able to perform the tasks listed below:<br>
+--Sections A-E have a combined weight of 15-20%<br>
+--<p><ol type='A'><li> Severity Models
+--	<ol type='1'><li> Calculate the basic distributional quantities:
+--		<ol type='a'><li> moments</li>
+--			<li> Percentiles</li>
+--			<li> Generating functions</li>
+--		</ol></li>
+--	<li> Describe how changes in parameters affect the distribution.</li>
+--	<li> Recognize classes of distributions and their relationships.</li>
+--	<li> Apply the following techniques for creating new families of distributions:
+--		<ol type='a'><li> Multiplication by a constant</li>
+--			<li> Raising to a power</li>
+--			<li> Exponentiation,</li>
+--			<li> Mixing</li>
+--		</ol></li>
+--	<li> Identify the applications in which each distribution is used and reasons why.</li>
+--	<li> Apply the distribution to an application, given the parameters.</li>
+--	<li> Calculate various measures of tail weight and interpret the results to compare the tail weights.</li>
+--	</ol></li>
+--<li> Frequency Models<br>
+--For the Poisson, Mixed Poisson, Binomial, Negative Binomial, Geometric distribution and mixtures thereof:
+--	<ol type='1'><li> Describe how changes in parameters affect the distribution,</li>
+--	<li> Calculate moments,</li>
+--	<li> Identify the applications for which each distribution is used and reasons why,</li>
+--	<li> Apply the distribution to an application given the parameters.</li>
+--	<li> Apply the zero-truncated or zero-modified distribution to an application given the parameters</li>
+--	</ol></li>
+--<li> Aggregate Models
+--	<ol type='1'><li> Compute relevant parameters and statistics for collective risk models.</li>
+--	<li> Evaluate compound models for aggregate claims.</li>
+--	<li> Compute aggregate claims distributions.</li>
+--	</ol></li>
+--<li> For severity, frequency and aggregate models
+--	<ol type='1'><li> Evaluate the impacts of coverage modifications:
+--		<ol type='a'><li> Deductibles</li>
+--			<li> Limits</li>
+--			<li> Coinsurance</li>
+--		</ol></li>
+--	<li> Calculate Loss Elimination Ratios.</li>
+--	<li> Evaluate effects of inflation on losses.</li>
+--	</ol></li>
+--<li> RiskMeasures
+--	<ol type='1'><li> Calculate VaR, and TVaR and explain their use and limitations.</li>
+--	</ol></li>
+--<li> Construction of Empirical Models (20-25%)
+--	<ol type='1'><li> Estimate failure time and loss distributions using:
+--		<ol type='a'><li> Kaplan-Meier estimator, including approximations for large data sets</li>
+--			<li> Nelson-Aalen estimator</li>
+--			<li> Kernel density estimators</li>
+--		</ol></li>
+--	<li> Estimate the variance of estimators and confidence intervals for failure time and loss distributions.</li>
+--	<li> Apply the following concepts in estimating failure time and loss distribution:
+--		<ol type='a'><li> Unbiasedness</li>
+--			<li> Consistency</li>
+--			<li> Mean squared error</li>
+--		</ol></li>
+--	</ol></li>
+--<li> Construction and Selection of Parametric Models (25-30%)
+--	<ol type='1'><li> Estimate the parameters of failure time and loss distributions using:
+--		<ol type='a'><li> Maximum likelihood</li>
+--			<li> Method of moments</li>
+--			<li> Percentile matching</li>
+--			<li> Bayesian procedures</li>
+--		</ol></li>
+--	<li> Estimate the parameters of failure time and loss distributions with censored and/or truncated data using maximum likelihood.</li>
+--	<li> Estimate the variance of estimators and the confidence intervals for the parameters and functions of parameters of failure time and loss distributions.</li>
+--	<li> Apply the following concepts in estimating failure time and loss distributions:
+--		<ol type='a'><li> Unbiasedness</li>
+--			<li> Asymptotic unbiasedness</li>
+--			<li> Consistency</li>
+--			<li> Mean squared error</li>
+--			<li> Uniform minimum variance estimator</li>
+--		</ol></li>
+--	<li> Determine the acceptability of a fitted model and/or compare models using:
+--		<ol type='a'><li> Graphical procedures</li>
+--			<li> Kolmogorov-Smirnov test</li>
+--			<li> Anderson-Darling test</li>
+--			<li> Chi-square goodness-of-fit test</li>
+--			<li> Likelihood ratio test</li>
+--			<li> Schwarz Bayesian Criterion</li>
+--		</ol></li>
+--	</ol></li>
+--<li> Credibility (20-25%)
+--	<ol type='1'><li> Apply limited fluctuation (classical) credibility including criteria for both full and partial credibility.</li>
+--	<li> Perform Bayesian analysis using both discrete and continuous models.</li>
+--	<li> Apply Buhlmann and Buhlmann-Straub models and understand the relationship of these to the Bayesian model.</li>
+--	<li> Apply conjugate priors in Bayesian analysis and in particular the Poisson-gamma model.</li>
+--	<li> Apply empirical Bayesian methods in the nonparametric and semiparametric cases.</li>
+--	</ol></li>
+--<li> Simulation (5-10%)
+--	<ol type='1'><li> Simulate both discrete and continuous random variables using the inversion method.</li>
+--	<li> Estimate the number of simulations needed to obtain an estimate with a given error and a given degree of confidence.</li>
+--	<li> Use simulation to determine the p-value for a hypothesis test.</li>
+--	<li> Use the bootstrap method to estimate the mean squared error of an estimator.</li>
+--	<li> Apply simulation methods within the context of actuarial models.</li>
+--	</ol></li>
+--</ol></li></p>
+--<h2>Reading Selections for learning outcomes A through G and I:</h2>
+--<h3>Texts*</h3>
+--<p><ul><li> Loss Models: From Data to Decisions, (Third Edition), 2008, by Klugman, S.A., Panjer, H.H. and Willmot, G.E.,<br>
+--Chapter 3<br>
+--Chapter 4<br>
+--Chapter 5, Sections 5.1- 5.4 only<br>
+--Chapter 6, Sections 6.1- 6.5 and 6.7<br>
+--Chapter 8<br>
+--Chapter 9, Sections 9.1-9.7 (excluding 9.6.1 and examples 9.9 and 9.11), Sections 9.11.1-9.11.2<br>
+--Chapter 12<br>
+--Chapter 13<br>
+--Chapter 14<br>
+--Chapter 15, Sections 15.1- 15.6.4, 15.6.6 only<br>
+--Chapter 16<br>
+--Chapter 21, Sections 21.1-21.2 (excluding 21.2.4)
+--</li><ul></p>
+--<h3>Reading Options for learning outcome H (Credibility) will be:</h3>
+--<h4>Option A</h4>
+--<p><ul><li> Loss Models: From Data to Decisions, (Third Edition), 2008, by Klugman, S.A., Panjer, H.H., and Willmot, G.E.<br>
+--Chapter 20, Sections 20.2, 20.3 (excluding 20.3.8), 20.4 (excluding 20.4.3)
+--</li><ul></p>
+--<h4>Option B</h4>
+--<p><ul><li> Foundations of Casualty Actuarial Science (Fourth Edition), 2001, Casualty Actuarial Society<br>
+--Chapter 8, Section 1 (background only) Sections 2-5</li>
+--<li> Topics in Credibility by Dean, C.G.
+--</li><ul></p>
+--<h4>Option C</h4>
+--<p><ul><li> Introduction to Credibility Theory (Fourth Edition), 2010, Herzog, T.N.<br>
+--Chapter 1-3 (background only)<br>
+--Chapters 4-8<br>
+--Chapter 9 (background only)
+--</li><ul></p>
+--<h3>*Any textbook errata are included below.</h3>
+--<h2>Other Resources</h2>
+--<p><a href='http://www.soa.org/files/pdf/edu-2009-fall-exam-c-table.pdf'>Tables for Exam C/Exam 4</a></p>
+--<p><a href='http://www.beanactuary.org/exams/preliminary/?fa=C4tables'>Preview of the CBT layout of the Exam C/4 tables in HTML</a></p>
+--<p><a href='http://www.beanactuary.org/exams/preliminary/exams/syllabi/Loss_Models.pdf'>Loss Models Errata Third Edition</a></p>
+--<p>All released exam papers since 2000, can be found at:<br>
+--<a href='http://www.soa.org/education/exam-req/syllabus-study-materials/edu-multiple-choice-exam.aspx'>Past Exam Questions and Solutions</a></p>
+--<p>Exam C/4 Sample <a href='http://www.soa.org/files/pdf/edu-2009-fall-exam-c-questions.pdf'>Questions</a> and <a href='http://www.soa.org/files/pdf/edu-2009-fall-exam-c-solutions.pdf'>Solutions</a></p>"
+--where id=5;
+--
+--
